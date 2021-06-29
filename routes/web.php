@@ -28,6 +28,9 @@ Route::get('/venta/crear', [VentaController::class, 'create'])->name('crear_vent
 Route::get('/venta/{id}/editar', [VentaController::class, 'edit'])->name('editar_venta');
 Route::get('/venta/{id}/eliminar', [VentaController::class, 'show'])->name('eliminar_venta');
 Route::post('/venta/store', [VentaController::class, 'store'])->name('guardar_venta');
+Route::get('/cancelar', function(){
+    return redirect()->route('index_venta')->with('cancelar','Venta cancelada!!');
+})->name('cancelar');
 //  Route::resource('ventas', 'VentaController');
 //Route::get('ventas/create', 'VentaController@create');
 

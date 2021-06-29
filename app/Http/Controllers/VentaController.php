@@ -69,7 +69,8 @@ class VentaController extends Controller
          $venta->id_producto = $request->id_producto;
          $venta->descripcion = $request->descripcion;
          $venta->save();
-         return 'Venta guardada correctamente!! ';
+         //return 'Venta guardada correctamente!! ';
+         return redirect()->route('index_venta')->with('datos','Venta guardada correctamente!!');
     }
 
     /**

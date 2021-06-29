@@ -52,7 +52,7 @@
           </div>
 
           <button type="submit" class="btn btn-success btn-block"><i class="fas fa-save"></i> Guardar</button>
-          <a href="{{}}" class="redondo btn btn-danger"><i class="fas fa-ban"></i> Cancelar</a>
+          <a href="{{ route('cancelar') }}" class="redondo btn btn-danger"><i class="fas fa-ban"></i> Cancelar</a>
 
 
           

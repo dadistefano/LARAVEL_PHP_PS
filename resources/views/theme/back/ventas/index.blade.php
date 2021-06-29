@@ -3,7 +3,27 @@
 
 @section('titulo', 'Index')
 <main class="container p-8">
-    
+
+    @if (session('datos'))
+    <div class="alert alert-success alert-dismissible fade show" role="alert">
+        {{ session('datos') }}
+        <button type="button" class="close" data-dismiss="alert" arial-label="close">
+            <span arial-hidden="true">&times;</span>
+        </button>
+    </div>
+    @endif
+
+    @if (session('cancelar'))
+    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+        {{ session('cancelar') }}
+        <button type="button" class="close" data-dismiss="alert" arial-label="close">
+            <span arial-hidden="true">&times;</span>
+        </button>
+    </div>
+    @endif
+
+
+
     <div class="col-md-8">
         <h3>Index</h3>
         <div class="row float-right">
@@ -45,7 +65,7 @@
                     @endforeach
             </tbody>
         </table>
-        Suma totales: {{ $sum }}
+        Suma totales: $ {{ $sum }}
     </div>
 </main>
 @endsection
