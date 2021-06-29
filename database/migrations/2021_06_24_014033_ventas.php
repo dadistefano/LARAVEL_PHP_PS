@@ -14,7 +14,12 @@ class Ventas extends Migration
     public function up()
     {
         Schema::create('ventas', function (Blueprint $table) {
-            $table->id();
+            $table->bigIncrements('id');
+            $table->date('fecha');
+            $table->time('hora');
+            $table->decimal('importe', 8, 2);   //8 digitos + 2 decimales
+            $table->unsignedBigInteger('id_producto');
+            $table->string('descripcion', 100)->nullable(); //puede ser nuleable
             $table->timestamps();
         });
     }
