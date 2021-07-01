@@ -30,7 +30,7 @@
             <a href="{{ route('crear_venta')}}" name="Nueva Venta" class="btn btn-success btn-block">
             <i class="fas fa-user-plus"></i>Agregar nueva VENTA</a>
         </div>
-        <table class="table table-bordered">
+        <table class="table table-striped">
             <thead>
                 <tr>
                 <th>Id</th>

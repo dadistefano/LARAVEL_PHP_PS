@@ -38,7 +38,7 @@
               <div class="input-group-prepend">                                                    
                   <div class="input-group-text"><i class="fa fa-calendar-alt text-info"></i></div>
               </div>
-              <input type="time" name="hora" id="fechadenacimiento" min="18:00" max="21:00" step="3600" class="form-control">                                                   
+              <input type="time" name="hora" id="fechadenacimiento" class="form-control">                                                   
         </div>
       </div>
           <div class="form-group">
